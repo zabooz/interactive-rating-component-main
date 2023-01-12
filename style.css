@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Overpass',sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+main {
+    background-color: hsl(213, 19%, 18%);
+    padding:2rem;
+    max-width:375px;
+    border-radius: 1.5rem;
+}
+.submit-toggle{
+    display: none;
+}
+#star{
+    background-color: hsl(211, 22%, 24%);
+    border-radius: 50%;
+    padding:.7rem;
+}
+h1 {
+    margin:1rem 0rem
+}
+p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    opacity: .6;
+    line-height: 1.5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    
+}
+.btn{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem; 
+    background-color:hsl(212, 23%, 27%);
+    border: none;
+    opacity: .5;
+    font-weight: 700;
+}
+
+.btn-container button:hover{
+    background-color: hsl(25, 97%, 53%);
+    opacity: 1;
+}
+.clicked{
+    background-color: hsl(217, 12%, 63%);
+    opacity: 1;
+}
+.subBtn-con{
+    display:flex;
+    justify-content:center ;
+}
+#submitBtn{
+    max-width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    padding: .8rem;
+    border-radius: 1.5rem;
+    border:none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-grow: 1;
+}
+#submitBtn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.thx-card{
+    display: none;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    padding:2rem;
+    max-width:375px;
+    border-radius: 1.5rem;
+    align-items: center;
+    gap:1.5rem;
+}
+.thx-card img{
+    max-width: 180px;
+}
+.selected{
+    background-color:hsl(211, 22%, 24%);
+    padding: .7rem;
+    border-radius: 1.5rem;
+    word-spacing: .1rem;
+}
+.selected,
+ span{
+    color:orange ;
+}
+.thx-card :last-child{
+    text-align: center;
+}
+@media (min-width:376px){
+    main{
+        max-width: 400px;
+    }
+    .thx-card{
+        max-width: 400px;
+    }
+}
